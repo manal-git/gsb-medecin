@@ -5,12 +5,11 @@ import { Doctor } from '../types/doctor.interface';
 export function convertMedecinToDoctor(medecin: Medecin): Doctor {
   return {
     id: medecin.id,    
-    nom: medecin.nom,
     prenom: medecin.prenom,
+    nom: medecin.nom,
+    email: medecin.email,
     specialite: medecin.specialite,
     adresse: medecin.adresse,
-    telephone: '',
-    email: medecin.email,
   };
 }
 
