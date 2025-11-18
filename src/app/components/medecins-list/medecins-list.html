@@ -1,11 +1,11 @@
 <h1>Médecins ({{ medecins.length }})</h1>
 <div>
-  @for (doctor of doctors; track medecin.id) {
+  @for (medecin of medecins; track medecin.id) {
 	  <div>
 	    <a [routerLink]="['/medecins', medecin.id]">
-	      <h2>{{ medecin.prenom }} {{ m.nom }}</h2>
+	      <h2>{{ medecin.prenom }} {{ medecin.nom }}</h2>
 	      <div>{{ medecin.adresse }}</div>
-	      <span>[{{ medecin.specialite }}]</span>
+	      <span>[{{ medecin.specialitecomplementaire }}]</span>
 	    </a>
 	  </div>
   } @empty {

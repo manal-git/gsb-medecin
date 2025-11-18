@@ -6,4 +6,6 @@ export const routes: Routes = [
   { path: "", component: MedecinsListComponent },
   { path: "medecins/:id", component: MedecinDetailComponent },
   { path: "**", redirectTo: "" },
+  { path: "medecins", component: MedecinsListComponent },
+  { path: "**", redirectTo: "medecins" }
 ];
